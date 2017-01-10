@@ -49,7 +49,7 @@ namespace datatypes
             }
             else if (oper == "*")
             {
-               return (num1 * num2); 
+               return (num1 * num2);
             }
                 Console.WriteLine(myNum);
             return myNum;
