@@ -18,7 +18,9 @@ namespace datatypes
             //return a string of these stings joined with a space  between them make sure it is public
             // call JoinStrings with your first and last name
 
-
+            var firstName = "Matthew";
+            var lastNane = "Docherty";
+            var fullName = JoinStrings(firstName, lastNane);
 
             // create a method  called  Arthimetic which takes in two  numbers and returns a result  of a  mathematical
             //function which is also sent a a single character the result sould be  printed  to the console
@@ -30,7 +32,50 @@ namespace datatypes
 
 
         }
+        public static int Arithmetic(int num1, int num2, char oper)
+        {
+            int myNum = 0;
+            if (oper == "+")
+            {
+                return num1 + num2;
+            }
+            else if (oper == "-")
+            {
+                return num1 - num2;
+            }
+            else if (oper == "/")
+            {
+                return num1 / num2;
+            }
+            else if (oper == "*")
+            {
+               return (num1 * num2); 
+            }
+                Console.WriteLine(myNum);
+            return myNum;
+        }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        public static string JoinStrings(string firstNane, string lastNane)
+        {
+           var myString = firstNane +" "+ lastNane;
+            Console.WriteLine(myString);
+            return myString;
+        }
     }
 }
+
